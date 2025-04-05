@@ -13,5 +13,5 @@ fig_scatter = px.scatter(df, x='price', y='odometer', title='Price vs. Odometer'
 st.plotly_chart(fig_scatter)
 
 if st.checkbox('Show Raw Data'):
-    st.write(df)
+    st.dataframe(df)
 
